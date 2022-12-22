@@ -1,0 +1,114 @@
+{% extends 'Base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block Content %} 
+
+<div class="container-fluid my-4 mx-0 p-0">
+<div id="carouselExampleCaptions" class="carousel slide mx-0" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner w-100" data-bs-interval="3000">
+      <div class="carousel-item active ">
+        <img src="/static/Images/Image2.jpg" class="d-block w-100 h-80" alt="...">        
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/static/Images/Image1.jpg" class="d-block w-100 h-80" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/static/Images/Image3.jpg" class="d-block w-100 h-80" alt="...">
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<div class="container my-5">
+    Deeply traditional yet endlessly surprising, India is one of those destinations that ends up on every traveler's bucket list at some point. They might dream of going to Agra to see the Taj Mahal in all its glory, or exploring the royal palaces scattered throughout Rajasthan. Others find themselves attracted to the jaw-dropping landscapes in Darjeeling and Rishikesh, or the postcard-perfect beaches in Goa.
+</div>
+</div>
+
+<div class="d-flex justify-content-around p-3 ">
+    <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+    <img src="/static/Images/Alleppey.jpg" class="card-img-top" alt="Alleppey">
+        <div class="card-body">
+            <p class="card-text">Alleppey</p>
+        </div>
+    </div> 
+
+    <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+    <img src="/static/Images/Cherrapunji.jpg" class="card-img-top" alt="Cherrapunji">
+        <div class="card-body">
+            <p class="card-text">Cherrapunji</p>
+        </div>
+    </div>
+
+    <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+    <img src="/static/Images/Darjeeling.jpg" class="card-img-top" alt="Darjeeling">
+        <div class="card-body">
+            <p class="card-text">Darjeeling</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="d-flex justify-content-around p-3">
+    <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+        <img src="/static/Images/Dharamshala.jpeg" class="card-img-top" alt="Dharamshala">
+        <div class="card-body">
+          <p class="card-text">Dharamshala</p>
+        </div>
+    </div> 
+    
+    <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+        <img src="/static/Images/Gokarna Om Beach.jpg" class="card-img-top" alt="Gokarna Om Beach">
+        <div class="card-body">
+          <p class="card-text">Gokarna Om Beach</p>
+        </div>
+    </div>
+    
+    <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+        <img src="/static/Images/Orchha Fort.jpg" class="card-img-top" alt="Orchha Fort">
+        <div class="card-body">
+          <p class="card-text">Orchha Fort</p>
+        </div>
+    </div>
+    </div>
+  
+    <div class="d-flex justify-content-around p-3">
+        <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/Images/Pangong Tso.jpg" class="card-img-top" alt="Pangong Tsu">
+            <div class="card-body">
+              <p class="card-text">Pangong Tsu</p>
+            </div>
+        </div> 
+        
+        <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/Images/Sarnath.webp" class="card-img-top" alt="Sarnath">
+            <div class="card-body">
+              <p class="card-text">Sarnath</p>
+            </div>
+        </div>
+        
+        <div class="card border border-4 shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+            <img src="/static/Images/Tosh Paravati Valley.webp" class="card-img-top" alt="Tosh Paravati Valley">
+            <div class="card-body">
+              <p class="card-text">Tosh Paravati Valley</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mb-5 " >
+      <button type="button" onClick="window.location.href = '/content'" class="btn btn-secondary btn-lg p-3">Start Reading</button>
+    </div>
+
+{% endblock Content %}

@@ -1,0 +1,29 @@
+{% extends 'Base.html' %}
+
+{% block title %} Contact {% endblock title %}
+
+{% block Content %} 
+    
+    <div class="container my-5">
+   <form action="/contact" method="post" class="container-fluid p-4 border border-4 rounded">
+   {% csrf_token %}
+    <div>
+        <p class="display-6" >Please Leave a Message !!</p>
+    </div>   
+   
+    <div class="mb-3" >
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Submit</button>
+
+    </form>
+    </div>
+
+
+{% endblock Content %}

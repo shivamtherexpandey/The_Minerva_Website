@@ -1,5 +1,5 @@
 # The_Minerva_Website
-A website to impart information about various places in India.
+A website to impart information about places in India.
 
 ![Screenshot 2023-06-09 205117](https://github.com/TheRexishere/The_Minerva_Website/assets/95215534/7e390ab8-0b4d-4bc3-b0a7-995ce7ed14ff)
 
